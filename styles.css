@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: white;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(138, 136, 136, 0.5) 80%,
+    rgba(242, 185, 36, 0.9) 100%
+  );
+  height: 100%;
+}
+.header {
+  height: 100px;
+  text-align: right;
+}
+.contactar {
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 20%;
+  color: white;
+  display: inline-block;
+  font-size: 20pt;
+  margin: 30px 200px;
+  padding: 5px;
+  text-decoration: none;
+}
+.contactar:hover {
+  text-decoration: underline;
+  text-decoration-color: green;
+  color: green;
+  background: white;
+  border: 2px solid green;
+  transform: scale(120%);
+}
+.BRC {
+  font-size: 25pt;
+  height: 400px;
+}
+.BRC H1 {
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+.foto {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 20px;
+  height: auto;
+  width: 80%;
+}
+.fotografia {
+  height: auto;
+  width: 120%;
+}
+.descripcion {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.experiencia-opciones1 h4,
+.experiencia-opciones2 h4,
+.experiencia-opciones3 h4 {
+  cursor: pointer;
+}
+#subasta-h4 {
+    cursor: no-drop;
+}
+.experiencia h2,
+.formacion h2,
+.habilidades h2,
+.otra h2 {
+  display: inline-block;
+  color: black;
+  cursor: pointer;
+  font-size: 30pt;
+  margin-left: 120px;
+  opacity: 80%;
+  position: relative;
+  -webkit-text-stroke: 1px #594f0e;
+}
+.experiencia h2:hover,
+.formacion h2:hover,
+.habilidades h2:hover,
+.otra h2:hover {
+  transform: scale3d(150%);
+  color: black;
+  opacity: 100%;
+  transition: 1s;
+}
+.experiencia h2::after,
+.experiencia h2::before,
+.formacion h2::after,
+.formacion h2::before,
+.habilidades h2::after,
+.habilidades h2::before,
+.otra h2::after,
+.otra h2::before {
+  background-color: currentColor;
+  content: "";
+  height: 3px;
+  position: absolute;
+  top: 0.6em;
+  width: 120px;
+}
+.experiencia h2::before,
+.formacion h2::before,
+.habilidades h2::before,
+.otra h2::before {
+  left: -130px;
+}
+.experiencia h2::after,
+.formacion h2::after,
+.habilidades h2::after,
+.otra h2::after {
+  right: -130px;
+}
+.experiencia h2:hover::after,
+.experiencia h2:hover::before,
+.formacion h2:hover::after,
+.formacion h2:hover::before,
+.habilidades h2:hover::after,
+.habilidades h2:hover::before,
+.otra h2:hover::after,
+.otra h2:hover::before {
+  transform: scale(0);
+  transition: 1s;
+}
+#experiencia-lista {
+  display: none;
+}
+#experiencia-lista.active {
+  display: block;
+}
+#experiencia-lista ul {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+#experiencia-second1 {
+  display: none;
+  margin: 20px;
+}
+#experiencia-second1.activate {
+  display: block;
+}
+#experiencia-second2 {
+  display: none;
+}
+#experiencia-second2.activate {
+  display: block;
+}
+#experiencia-second3 {
+  display: none;
+}
+#experiencia-second3.activate {
+  display: block;
+}
+.pikolinosLogo,
+.serpilLogo,
+.aligesLogo {
+  border: 5px solid #594f0e;
+  border-radius: 25px;
+  margin: 20px;
+  margin-left: 40px;
+  width: 200px;
+}
+
+.serpilLogo {
+  margin-left: 60px;
+}
+.piko,
+.serpil,
+.aliges {
+  cursor: none;
+}
+.piko a,
+.serpil a,
+.aliges a {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: 16pt;
+  font-weight: bold;
+  justify-content: center;
+  opacity: 0.6;
+  text-decoration: none;
+  -webkit-text-stroke: 0.1px black;
+}
+.piko:hover,
+.serpil:hover,
+.aliges:hover {
+  transform: scale(125%);
+}
+.piko a:hover,
+.serpil a:hover,
+.aliges a:hover {
+  opacity: 1;
+}
+
+li {
+  display: inline-block;
+  font-size: 30pt;
+  list-style: none;
+  margin: 10px 150px;
+}
+.portfolio,
+.bulevar,
+.subasta {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 50px;
+  border-bottom: 1px solid white;
+  padding: 30px;
+}
+.bulevarLogo,
+.subastaLogo {
+  height: auto;
+  width: 300px;
+}
+.formacion {
+  cursor: pointer;
+}
+#formacion-lista {
+  display: none;
+}
+#formacion-lista.active {
+  display: block;
+}
+.habilidades {
+  cursor: pointer;
+}
+#habilidades-lista {
+  display: none;
+}
+#habilidades-lista.active {
+  display: block;
+}
+.otra {
+  cursor: pointer;
+}
+#otra-lista {
+  display: none;
+}
+#otra-lista.active {
+  display: block;
+}
+
+
+
+
+/* PAGINA PIKOLINOS */
+.piko-header {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#volver {
+    font-size: 40pt;
+    margin: 50px 0px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+#volver:hover {
+    font-size: 80pt;
+    transition-duration: 1s;
+    color: green;
+    transform: rotate(1turn)
+}
+#volver::after {
+    font-size: 40pt;
+    transition-duration: 1s;
+    color: red;
+    transform: rotate(1turn)
+}
+.piko-header h3 {
+    font-size: 30pt;
+}
+.pik-sec-logo {
+     margin: 100px;
+}
+.pik-sec-logo div {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.pik-logo {
+    height: auto;
+    width: 300px;
+}
+.pik-sec-descripción {
+    font-size: 24pt;
+    margin: 10px 30px;
+    padding: 50px;
+    text-align: center;
+}
