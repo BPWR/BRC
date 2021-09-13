@@ -1,3 +1,14 @@
+// Mi edad
+
+function edad(annios) {
+    var hoy = new Date();
+    var annioActual = hoy.getFullYear();
+    const longevidad = annioActual - 1985;
+    return longevidad
+}
+const miEdad = document.getElementById("aquiMiEdad");
+miEdad.innerText = edad() + " años";
+
 // Evento Click de las categorias
 
 const experienciaDesplegable = document.querySelector('.experiencia-titulo')
